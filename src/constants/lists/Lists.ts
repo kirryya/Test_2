@@ -7,12 +7,12 @@ export const ARR_1: ListsType = [
   { id: v1(), title: 'boom11' },
   { id: v1(), title: 'boom111' },
 ];
-export const ARR_2 = [
+export const ARR_2: ListsType = [
   { id: v1(), title: 'boom2' },
   { id: v1(), title: 'boom22' },
   { id: v1(), title: 'boom222' },
 ];
-export const ARR_3 = [
+export const ARR_3: ListsType = [
   { id: v1(), title: 'boom3' },
   { id: v1(), title: 'boom33' },
   { id: v1(), title: 'boom333' },
