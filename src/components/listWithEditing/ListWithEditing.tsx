@@ -6,7 +6,7 @@ import { ReturnComponentType, ListWithEditingType } from 'types';
 
 export const ListWithEditing: FC<ListWithEditingType> = ({
   list,
-  MoveAllToList,
+  moveAllToList,
   moveToList,
   onChangeSetTitle,
   addTitle,
@@ -16,7 +16,7 @@ export const ListWithEditing: FC<ListWithEditingType> = ({
   return (
     <div className={style.array}>
       <h3>{name}</h3>
-      <button type="button" onClick={MoveAllToList}>
+      <button type="button" onClick={moveAllToList}>
         Move All to
       </button>
       <button type="button" onClick={addTitle}>

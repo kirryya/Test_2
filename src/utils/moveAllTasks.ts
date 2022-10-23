@@ -2,7 +2,7 @@ import { Dispatch } from 'react';
 
 import { ListsType } from 'types';
 
-export const MoveAllTasks = (
+export const moveAllTasks = (
   setListIn: Dispatch<ListsType>,
   listIn: ListsType,
   listFrom: ListsType,

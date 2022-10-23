@@ -9,7 +9,7 @@ export type ListsType = ListType[];
 
 export type ListWithEditingType = {
   list: ListsType;
-  MoveAllToList: () => void;
+  moveAllToList: () => void;
   moveToList: (id: string, title: string) => void;
   onChangeSetTitle: (id: string, title: string) => void;
   addTitle: () => void;
@@ -19,7 +19,7 @@ export type ListWithEditingType = {
 
 export type ListWithoutEditingType = {
   list: ListsType;
-  MoveAllToList: () => void;
+  moveAllToList: () => void;
   moveToList: (id: string, title: string) => void;
   name: string;
 };

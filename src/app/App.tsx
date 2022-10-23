@@ -7,7 +7,7 @@ import { ARR_1, ARR_2, ARR_3 } from '../constants';
 import style from 'app/App.module.css';
 import { ListWithEditing, ListWithoutEditing } from 'components';
 import { ListsType, ReturnComponentType } from 'types';
-import { MoveAllTasks } from 'utils/moveAllTasks';
+import { moveAllTasks } from 'utils/moveAllTasks';
 import { moveToList } from 'utils/moveToList';
 
 export const App: FC = (): ReturnComponentType => {
@@ -37,16 +37,16 @@ export const App: FC = (): ReturnComponentType => {
     moveToList(id, title, setList3, list3, setList2, list2);
   };
 
-  const MoveAllToList1 = (): void => {
-    MoveAllTasks(setList1, list1, list3, setList3);
+  const moveAllTasksToList1 = (): void => {
+    moveAllTasks(setList1, list1, list3, setList3);
   };
 
-  const MoveAllToList2 = (): void => {
-    MoveAllTasks(setList2, list2, list1, setList1);
+  const moveAllTasksToList2 = (): void => {
+    moveAllTasks(setList2, list2, list1, setList1);
   };
 
-  const MoveAllToList3 = (): void => {
-    MoveAllTasks(setList3, list3, list2, setList2);
+  const moveAllTasksToList3 = (): void => {
+    moveAllTasks(setList3, list3, list2, setList2);
   };
 
   return (
@@ -54,13 +54,13 @@ export const App: FC = (): ReturnComponentType => {
       <ListWithoutEditing
         name="Список 1"
         list={list1}
-        MoveAllToList={MoveAllToList2}
+        moveAllToList={moveAllTasksToList2}
         moveToList={moveToList2}
       />
       <ListWithEditing
         name="Список 2"
         list={list2}
-        MoveAllToList={MoveAllToList3}
+        moveAllToList={moveAllTasksToList3}
         moveToList={moveToList3}
         onChangeSetTitle={onChangeSetTitle}
         addTitle={addTitle}
@@ -69,7 +69,7 @@ export const App: FC = (): ReturnComponentType => {
       <ListWithoutEditing
         name="Список 3"
         list={list3}
-        MoveAllToList={MoveAllToList1}
+        moveAllToList={moveAllTasksToList1}
         moveToList={moveToList1}
       />
     </div>

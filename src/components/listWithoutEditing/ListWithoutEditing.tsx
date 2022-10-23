@@ -5,14 +5,14 @@ import { ListWithoutEditingType, ReturnComponentType } from 'types';
 
 export const ListWithoutEditing: FC<ListWithoutEditingType> = ({
   list,
-  MoveAllToList,
+  moveAllToList,
   moveToList,
   name,
 }: ListWithoutEditingType): ReturnComponentType => {
   return (
     <div className={style.array}>
       <h3>{name}</h3>
-      <button type="button" onClick={MoveAllToList}>
+      <button type="button" onClick={moveAllToList}>
         Move All to
       </button>
 
