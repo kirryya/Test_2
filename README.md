@@ -1,6 +1,6 @@
 # Lists 
 
-You 3 lists of tasks
+You have 3 lists of tasks
 
 ### You can:
 
