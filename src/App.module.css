@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  text-align: start;
+  justify-content: center;
+}
+
+.array {
+  margin: 30px;
+  border: 1px solid #556ee6;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
