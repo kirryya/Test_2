@@ -10,7 +10,7 @@ import { ListsType, ReturnComponentType } from 'types';
 import { moveAllTasks } from 'utils/moveAllTasks';
 import { moveToList } from 'utils/moveToList';
 
-export const App: FC = (): ReturnComponentType => {
+export const App: FC = React.memo((): ReturnComponentType => {
   const [list1, setList1] = useState<ListsType>(ARR_1);
   const [list2, setList2] = useState<ListsType>(ARR_2);
   const [list3, setList3] = useState<ListsType>(ARR_3);
@@ -74,4 +74,4 @@ export const App: FC = (): ReturnComponentType => {
       />
     </div>
   );
-};
+});
